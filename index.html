@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>StudyBuddy</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>StudyBuddy 📚</h1>
+
+        <p class="subtitle">
+            Your simple study planner
+        </p>
+
+       <div class="input-section">
+
+    <select id="subjectInput">
+        <option value="DBMS">DBMS</option>
+        <option value="DSA">DSA</option>
+        <option value="Java">Java</option>
+        <option value="Computer Networks">Computer Networks</option>
+        <option value="Operating Systems">Operating Systems</option>
+    </select>
+
+    <input 
+        type="text" 
+        id="taskInput" 
+        placeholder="Enter your study task"
+    >
+
+    <button class="add-btn" onclick="addTask()">
+        Add
+    </button>
+
+</div>
+
+        <h2>My Tasks</h2>
+
+<div class="stats">
+    <p>Total: <span id="totalTasks">0</span></p>
+    <p>Completed: <span id="completedTasks">0</span></p>
+    <p>Pending: <span id="pendingTasks">0</span></p>
+</div>
+
+<ul id="taskList"></ul>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
