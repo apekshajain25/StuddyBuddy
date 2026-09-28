@@ -86,3 +86,39 @@ li {
     margin: 0;
     font-weight: bold;
 }
+@media (max-width: 600px) {
+
+    .container {
+        width: 90%;
+        margin: 30px auto;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+
+    .input-section {
+        flex-direction: column;
+    }
+
+    input,
+    select,
+    .add-btn {
+        width: 100%;
+        box-sizing: border-box;
+        margin: 0;
+    }
+
+    .add-btn {
+        padding: 12px;
+    }
+
+    .stats {
+        flex-direction: column;
+        gap: 8px;
+        text-align: center;
+    }
+
+    li {
+        width: 100%;
+        box-sizing: border-box;
+    }
+}
